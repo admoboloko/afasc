@@ -55,6 +55,6 @@ async def webhook():
 # Set webhook
 @app.route("/set_webhook", methods=["GET"])
 def set_webhook():
-    webhook_url = f"https://afasc-pz2jycd9a-admobolokos-projects.vercel.app/{BOT_TOKEN}"  # Replace with your Vercel URL
+    webhook_url = "https://afasc-pz2jycd9a-admobolokos-projects.vercel.app/{BOT_TOKEN}"
     application.bot.set_webhook(url=webhook_url)
     return "Webhook set successfully!", 200
