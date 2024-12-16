@@ -53,7 +53,7 @@ def webhook():
 # Flask route to set the webhook (run this once)
 @app.route("/set_webhook", methods=["GET"])
 def set_webhook():
-    webhook_url = f"https://<your-server-domain>/{TOKEN}"  # Replace <your-server-domain> with your domain
+    webhook_url = f"https://afasc.onrender.com/{TOKEN}"  # Correctly formatted webhook URL
     application.bot.set_webhook(webhook_url)
     return f"Webhook set to {webhook_url}", 200
 
