@@ -6,5 +6,5 @@ services:
     startCommand: "gunicorn app:app"
     envVars:
       - key: TELEGRAM_BOT_TOKEN
-        value: "7545746171:AAFsI8zRnrs0_INPxO6eFrCHKkukAs9FRmM"  # Add your bot token here or use Render's dashboard
+        value: "7545746171:AAFsI8zRnrs0_INPxO6eFrCHKkukAs9FRmM"
     plan: free
